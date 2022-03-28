@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    font-size: 13px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background:radial-gradient(white,gold)
+}
+
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1{
+    font-size: 3rem;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+#taskfrom{
+    display: flex;
+}
+
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background:none;
+}
+
+#newtaskinput{
+    flex: 1 1 ;
+    background-color:black;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: gold;
+    font-size: 1.25rem;
+}
+
+#newtaskinput::placeholder{
+    color: grey;
+}
+
+#newtasksubmit{
+    color: goldenrod;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background:linear-gradient(black 80%,white);
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 1rem;
+}
+
+#newtasksubmit:hover{
+    opacity: 1;
+    color: gold;
+}
+
+#newtasksubmit:active{
+    opacity:1;
+}
+
+main{
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sectiontask{
+    padding: 1rem;
+}
+
+.sectiontask h2{
+    font: 2rem;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#containertasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color:gold;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.task .content{
+    flex: 1 1 0%;
+}
+
+.task .content .text{
+    color: black;
+    font-size: 1.5rem;
+    width: 50%;
+    display: flex;
+    transition: 1s;
+}
+
+.task .content .text:not(:read-only)
+{
+    color: crimson;
+}
+
+.task .actions{
+    display: flex;
+    margin: 0 0.5rem;
+}
+
+.task .actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+.task .actions button:hover{
+    opacity: 1;
+}
+
+.task .actions button:active{
+    opacity: 1;
+}
+
+.task .actions .edit{
+    color: black;
+}
+
+.task .actions .delete{
+    color: black;
+}
